@@ -9,7 +9,7 @@
 #include <freertos/FreeRTOS.h>
 #include <freertos/semphr.h>
 
-#include "freertos-cpp-wrapper/Attributes.hpp"
+#include "internal/Utils.hpp"
 
 namespace freertos {
 template<typename T>

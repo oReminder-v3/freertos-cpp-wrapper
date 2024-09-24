@@ -11,7 +11,7 @@
 #include <freertos/FreeRTOS.h>
 #include <freertos/timers.h>
 
-#include "freertos-cpp-wrapper/internal/Utils.hpp"
+#include "internal/Utils.hpp"
 
 namespace utils {
 namespace internal {
