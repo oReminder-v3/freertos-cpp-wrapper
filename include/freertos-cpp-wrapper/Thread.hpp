@@ -10,7 +10,7 @@
 
 #include <freertos/task.h>
 
-#include "internal/Utils.hpp"
+#include "freertos-cpp-wrapper/internal/Utils.hpp"
 
 namespace freertos {
 class Thread {

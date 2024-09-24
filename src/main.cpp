@@ -3,11 +3,11 @@
 //
 #include <Arduino.h>
 
-#include "Atomic.hpp"
-#include "Attributes.hpp"
-#include "Concurrency.hpp"
-#include "Thread.hpp"
-#include "Timer.hpp"
+#include "freertos-cpp-wrapper/Atomic.hpp"
+#include "freertos-cpp-wrapper/Attributes.hpp"
+#include "freertos-cpp-wrapper/Concurrency.hpp"
+#include "freertos-cpp-wrapper/Thread.hpp"
+#include "freertos-cpp-wrapper/Timer.hpp"
 
 void setup() {}
 
