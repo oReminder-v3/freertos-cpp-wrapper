@@ -13,7 +13,7 @@
 
 #include "internal/Utils.hpp"
 
-namespace utils {
+namespace freertos {
 namespace internal {
 class TimerBase {
 public:
