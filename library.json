@@ -1,0 +1,19 @@
+{
+  "name": "freertos-cpp-wrapper",
+  "version": "1.0.0",
+  "description": "A cpp wrapper for FreeRTOS",
+  "keywords": "cpp, freertos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robcholz/freertos-cpp-wrapper.git"
+  },
+  "authors": [
+    {
+      "name": "robcholz",
+      "url": "https://github.com/robcholz"
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": "espressif32"
+}
