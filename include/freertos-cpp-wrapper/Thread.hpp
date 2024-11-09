@@ -23,15 +23,15 @@ public:
 				  const char *name, const uint32_t stackDepth, void *parameters,
 				  const UBaseType_t priority)
 	  : task(nullptr) {
-	xTaskCreate(runnable, name, stackDepth, &parameters, priority, &task);
-	stop();
+	xTaskCreate(runnable, name, stackDepth, parameters, priority, &task);
+	vTaskSuspend(task);
   }
 
   explicit Thread(std::function<void()> runnable, const char *name,
 				  const uint32_t stackDepth, const UBaseType_t priority)
 	  : task(nullptr), runnable(std::move(runnable)) {
 	xTaskCreate(RTOSTaskWrapper, name, stackDepth, this, priority, &task);
-	stop();
+	vTaskSuspend(task);
   }
 
   ~Thread() { vTaskDelete(task); }
