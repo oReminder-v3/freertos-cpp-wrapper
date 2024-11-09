@@ -28,7 +28,7 @@ private:
   T *mutex;
 };
 
-template<TickType_t DEFAULT_TICK = 10>
+template<TickType_t DEFAULT_TICK = 30>
 class Mutex {
 public:
   Mutex() { object = xSemaphoreCreateMutex(); }
